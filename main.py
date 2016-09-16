@@ -90,7 +90,7 @@ def cli():
     url = 'https://www.12306.cn/opn/lcxxcx/query?purpose_codes=ADULT&queryDate={}&from_station={}&to_station={}'.format(
         date, from_station, to_station
     )
-    print(url)
+    #print(url)
     r = requests.get(url, verify = False)
     rows = r.json()['data']['datas']
     #pprint(rows, indent = 4)
